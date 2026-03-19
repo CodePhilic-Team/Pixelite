@@ -1,26 +1,123 @@
 @import "tailwindcss";
 
+/* ── Design Tokens via @theme ───────────────────────────────────── */
+@theme {
+  /* Colors */
+  --color-ivory: #F8F5F0;
+  --color-cream: #EDE8DF;
+  --color-stone: #C8BFB0;
+  --color-warm-gray: #8C8479;
+  --color-charcoal: #2C2926;
+  --color-ink: #0F0D0B;
+  --color-gold: #B89A60;
+  --color-gold-light: #D4B97A;
+
+  /* Font families */
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-body: var(--font-dmsans), system-ui, sans-serif;
+  --font-mono: var(--font-geistmono), monospace;
+
+  /* Spacing */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 3.5rem;
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+
+  /* Max widths */
+  --container-site: 1440px;
+  --container-copy: 68ch;
+
+  /* Transitions */
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── CSS Custom Properties ──────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-surface: var(--color-ivory);
+  --color-text: var(--color-charcoal);
+  --color-text-muted: var(--color-warm-gray);
+  --color-border: var(--color-stone);
+  --color-accent: var(--color-gold);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ── Base resets ────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  *:focus {
+    outline: none;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--color-cream); }
+  ::-webkit-scrollbar-thumb { background: var(--color-stone); border-radius: 3px; }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Keyframe Animations ────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Utility Classes ────────────────────────────────────────────── */
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      var(--color-cream) 25%,
+      var(--color-stone) 50%,
+      var(--color-cream) 75%
+    );
+    background-size: 400px 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .pause-animation {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee,
+    .animate-shimmer,
+    .animate-fade-in-up {
+      animation: none;
+    }
+  }
 }
