@@ -8,8 +8,9 @@ export const products: Product[] = [
     brand: 'Atelier Noire',
     priceInCents: 34900,
     images: [
-      { src: '/images/products/meridian-leather-tote-01.jpg', alt: 'Meridian Leather Tote in cognac' },
-      { src: '/images/products/meridian-leather-tote-hero.jpg', alt: 'Meridian Leather Tote interior' },
+      { src: '/images/products/bags.jpg', alt: 'Meridian Leather Tote in cognac' },
+      { src: '/images/products/bags-2.jpg', alt: 'Meridian Leather Tote interior' },
+      
     ],
     category: 'bags',
     tags: ['leather', 'tote', 'bestseller'],
@@ -78,8 +79,8 @@ export const products: Product[] = [
     brand: 'Atelier Noire',
     priceInCents: 42000,
     images: [
-      { src: '/images/products/nomad-canvas-weekender-01.jpg', alt: 'Nomad Canvas Weekender open' },
-      { src: '/images/products/nomad-canvas-weekender-02.jpg', alt: 'Nomad Canvas Weekender straps' },
+      { src: '/images/products/bag-3.jpg', alt: 'Nomad Canvas Weekender open' },
+      { src: '/images/products/bags-4.jpg', alt: 'Nomad Canvas Weekender straps' },
     ],
     category: 'bags',
     tags: ['canvas', 'travel', 'weekender'],
@@ -122,8 +123,8 @@ export const products: Product[] = [
     name: 'Arcana Linen Shirt',
     priceInCents: 13500,
     images: [
-      { src: '/images/products/arcana-linen-shirt-01.jpg', alt: 'Arcana Linen Shirt front' },
-      { src: '/images/products/arcana-linen-shirt-02.jpg', alt: 'Arcana Linen Shirt collar detail' },
+      { src: '/images/products/cloth-1.jpg', alt: 'Arcana Linen Shirt front' },
+      { src: '/images/products/cloth-2.jpg', alt: 'Arcana Linen Shirt collar detail' },
     ],
     category: 'clothing',
     tags: ['linen', 'shirt', 'summer'],
@@ -147,8 +148,8 @@ export const products: Product[] = [
     brand: 'Studio Forma',
     priceInCents: 9800,
     images: [
-      { src: '/images/products/verdant-ceramic-vase-01.jpg', alt: 'Verdant Ceramic Vase in sage' },
-      { src: '/images/products/verdant-ceramic-vase-02.jpg', alt: 'Verdant Ceramic Vase with botanicals' },
+      { src: '/images/products/alba-ceramic-vase-01.jpg', alt: 'Verdant Ceramic Vase in sage' },
+      { src: '/images/products/vase.jpg', alt: 'Verdant Ceramic Vase with botanicals' },
     ],
     category: 'home',
     tags: ['ceramic', 'vase', 'home-decor'],
@@ -212,8 +213,8 @@ export const products: Product[] = [
     brand: 'Studio Forma',
     priceInCents: 6500,
     images: [
-      { src: '/images/products/dusk-linen-cushion-01.jpg', alt: 'Dusk Linen Cushion on sofa' },
-      { src: '/images/products/dusk-linen-cushion-02.jpg', alt: 'Dusk Linen Cushion close-up' },
+      { src: '/images/products/cushion.jpg', alt: 'Dusk Linen Cushion on sofa' },
+     
     ],
     category: 'home',
     tags: ['linen', 'cushion', 'home-decor'],
@@ -234,8 +235,8 @@ export const products: Product[] = [
     brand: 'Maison Lux',
     priceInCents: 5800,
     images: [
-      { src: '/images/products/amber-glass-candle-01.jpg', alt: 'Amber Glass Candle lit' },
-      { src: '/images/products/amber-glass-candle-02.jpg', alt: 'Amber Glass Candle unlit' },
+      { src: '/images/products/candle.jpg', alt: 'Amber Glass Candle lit' },
+ 
     ],
     category: 'home',
     tags: ['candle', 'home-decor', 'fragrance'],
@@ -254,8 +255,8 @@ export const products: Product[] = [
     brand: 'Maison Lux',
     priceInCents: 12500,
     images: [
-      { src: '/images/products/gilt-ear-studs-01.jpg', alt: 'Gilt Ear Studs on model' },
-      { src: '/images/products/gilt-ear-studs-02.jpg', alt: 'Gilt Ear Studs on white background' },
+      { src: '/images/products/studs.jpg', alt: 'Gilt Ear Studs on model' },
+      
     ],
     category: 'accessories',
     tags: ['jewellery', 'gold', 'accessories'],
