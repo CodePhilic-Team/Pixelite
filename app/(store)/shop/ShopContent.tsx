@@ -50,16 +50,16 @@ export default function ShopContent() {
       {/* Page header */}
       <AnimatedSection className="mb-10">
         <h1
-          className="font-display font-light text-[var(--color-ink)] mb-2"
+          className="font-display font-light text-ink mb-2"
           style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.15 }}
         >
           {category ? categories.find((c) => c.slug === category)?.name ?? 'Shop' : 'All Products'}
         </h1>
-        <p className="font-body text-sm text-[var(--color-warm-gray)]">{sorted.length} products</p>
+        <p className="font-body text-sm text-warm-gray">{sorted.length} products</p>
       </AnimatedSection>
 
       {/* Filter/Sort bar */}
-      <div className="sticky top-16 z-30 bg-[var(--color-ivory)]/95 backdrop-blur-sm border-b border-[var(--color-stone)]/40 py-3 mb-10 -mx-4 sm:-mx-6 lg:-mx-10 xl:-mx-16 px-4 sm:px-6 lg:px-10 xl:px-16">
+      <div className="sticky top-16 z-30 bg-ivory/95 backdrop-blur-sm border-b border-stone/40 py-3 mb-10 -mx-4 sm:-mx-6 lg:-mx-10 xl:-mx-16 px-4 sm:px-6 lg:px-10 xl:px-16">
         <div className="flex flex-wrap items-center gap-2 justify-between">
           {/* Category tags */}
           <div className="flex flex-wrap gap-2">
@@ -80,8 +80,8 @@ export default function ShopContent() {
             value={sort}
             onChange={(e) => update('sort', e.target.value)}
             aria-label="Sort products"
-            className="font-body text-xs border border-[var(--color-stone)] bg-transparent text-[var(--color-charcoal)]
-                       rounded-sm px-3 py-1.5 focus:outline-none focus:border-[var(--color-gold)]
+            className="font-body text-xs border border-stone bg-transparent text-charcoal
+                       rounded-sm px-3 py-1.5 focus:outline-none focus:border-gold
                        cursor-pointer"
           >
             {SORT_OPTIONS.map((o) => (
@@ -96,7 +96,7 @@ export default function ShopContent() {
         <ProductGrid products={sorted} />
       ) : (
         <div className="text-center py-24">
-          <p className="font-body text-[var(--color-warm-gray)]">No products found.</p>
+          <p className="font-body text-warm-gray">No products found.</p>
         </div>
       )}
     </PageWrapper>

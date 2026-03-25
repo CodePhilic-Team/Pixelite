@@ -15,7 +15,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/images/hero/hero-main.jpg"
+        src="/images/hero/hero-2.jpg"
         alt="Editorial fashion model in luxury cashmere coat"
         fill
         priority
@@ -23,13 +23,13 @@ export default function HeroSection() {
         className="object-cover object-center"
       />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[var(--color-ink)]/40" />
+      <div className="absolute inset-0 bg-ink/40" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-10 xl:px-16 pt-32 pb-section">
+      <div className="relative z-10 mx-auto w-full max-w-site px-4 sm:px-6 lg:px-10 xl:px-16 pt-32 pb-section">
         {/* Eyebrow */}
         <motion.p
-          className="font-body text-xs tracking-[0.3em] uppercase text-[var(--color-gold)] mb-6"
+          className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-6"
           initial={prefersReduced ? {} : { opacity: 0, y: 10 }}
           animate={prefersReduced ? {} : { opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -80,7 +80,7 @@ export default function HeroSection() {
         >
           <Link href="/shop">
             <button className="inline-flex items-center justify-center h-12 px-8 font-body text-sm tracking-wide
-                               border border-white text-white hover:bg-[var(--color-ivory)] hover:text-[var(--color-ink)]
+                               border border-white text-white hover:bg-ivory hover:text-ink
                                transition-all duration-300 rounded-sm">
               Shop the Collection
             </button>

@@ -6,14 +6,14 @@ import AnimatedSection from '@/components/shared/AnimatedSection';
 /** Editorial category tile grid — 2×2 on desktop, stacked on mobile. */
 export default function CategoryGrid() {
   return (
-    <section className="py-[6rem] bg-[var(--color-cream)]">
-      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10 xl:px-16">
+    <section className="py-[6rem] bg-cream">
+      <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimatedSection className="text-center mb-12">
-          <p className="font-body text-xs tracking-widest uppercase text-[var(--color-gold)] mb-3">
+          <p className="font-body text-xs tracking-widest uppercase text-gold mb-3">
             Browse by Category
           </p>
           <h2
-            className="font-display font-light text-[var(--color-ink)]"
+            className="font-display font-light text-ink"
             style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)', lineHeight: 1.2 }}
           >
             Shop the Collection
@@ -25,7 +25,7 @@ export default function CategoryGrid() {
             <AnimatedSection key={cat.id} delay={i * 0.07}>
               <Link
                 href={`/shop/${cat.slug}`}
-                className="group relative overflow-hidden rounded-sm block aspect-[3/4] bg-[var(--color-stone)]"
+                className="group relative overflow-hidden rounded-sm block aspect-3/4 bg-stone"
               >
                 <Image
                   src={cat.imageSrc}
@@ -35,7 +35,7 @@ export default function CategoryGrid() {
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 {/* Base overlay */}
-                <div className="absolute inset-0 bg-[var(--color-ink)]/20 transition-opacity duration-300 group-hover:bg-[var(--color-ink)]/50" />
+                <div className="absolute inset-0 bg-ink/20 transition-opacity duration-300 group-hover:bg-ink/50" />
 
                 {/* Category name */}
                 <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 px-4">

@@ -9,7 +9,7 @@ export const products: Product[] = [
     priceInCents: 34900,
     images: [
       { src: '/images/products/meridian-leather-tote-01.jpg', alt: 'Meridian Leather Tote in cognac' },
-      { src: '/images/products/meridian-leather-tote-02.jpg', alt: 'Meridian Leather Tote interior' },
+      { src: '/images/products/meridian-leather-tote-hero.jpg', alt: 'Meridian Leather Tote interior' },
     ],
     category: 'bags',
     tags: ['leather', 'tote', 'bestseller'],
@@ -101,7 +101,7 @@ export const products: Product[] = [
     brand: 'Maison Lux',
     priceInCents: 21000,
     images: [
-      { src: '/images/products/lumiere-glass-fragrance-01.jpg', alt: 'Lumière Glass Fragrance bottle' },
+      { src: '/images/products/perfume.jpg', alt: 'Lumière Glass Fragrance bottle' },
       { src: '/images/products/lumiere-glass-fragrance-02.jpg', alt: 'Lumière Glass Fragrance lifestyle' },
     ],
     category: 'beauty',
@@ -170,7 +170,7 @@ export const products: Product[] = [
     brand: 'Atelier Noire',
     priceInCents: 8900,
     images: [
-      { src: '/images/products/onyx-leather-wallet-01.jpg', alt: 'Onyx Leather Wallet closed' },
+      { src: '/images/products/wallet.jpg', alt: 'Onyx Leather Wallet closed' },
       { src: '/images/products/onyx-leather-wallet-02.jpg', alt: 'Onyx Leather Wallet open' },
     ],
     category: 'accessories',
@@ -190,7 +190,7 @@ export const products: Product[] = [
     name: 'Haven Merino Sweater',
     priceInCents: 22000,
     images: [
-      { src: '/images/products/haven-merino-sweater-01.jpg', alt: 'Haven Merino Sweater in oatmeal' },
+      { src: '/images/products/sweater.jpg', alt: 'Haven Merino Sweater in oatmeal' },
       { src: '/images/products/haven-merino-sweater-02.jpg', alt: 'Haven Merino Sweater texture' },
     ],
     category: 'clothing',
