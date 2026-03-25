@@ -1,0 +1,116 @@
+/* Overview Bento Grid */
+.grid {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "stat1"
+    "stat2"
+    "stat3"
+    "quote"
+    "craft"
+    "shipping";
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "stat1  stat2"
+      "stat3  quote"
+      "craft  craft"
+      "shipping shipping";
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "stat1  stat2  quote   quote"
+      "craft  craft  stat3   shipping";
+  }
+}
+
+/* ── Area assignments ───────────────────────────── */
+.stat1    { grid-area: stat1; }
+.stat2    { grid-area: stat2; }
+.stat3    { grid-area: stat3; }
+.quote    { grid-area: quote; }
+.craft    { grid-area: craft; }
+.shipping { grid-area: shipping; }
+
+/* ── Shared card base ───────────────────────────── */
+.card {
+  border-radius: 2rem;
+  padding: 2rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -12px rgba(15, 13, 11, 0.18);
+}
+
+/* ── Card variants ──────────────────────────────── */
+.cardCream {
+  background-color: var(--color-cream);
+}
+
+.cardInk {
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+}
+
+.cardGold {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+  color: var(--color-ink);
+}
+
+.cardWarm {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+}
+
+/* ── Craft card (wide) ──────────────────────────── */
+.craftCard {
+  border-radius: 2rem;
+  overflow: hidden;
+  min-height: 220px;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.craftCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -12px rgba(15, 13, 11, 0.25);
+}
+
+.craftOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(15,13,11,0.85) 0%, rgba(15,13,11,0.2) 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.craftImage {
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.craftCard:hover .craftImage {
+  transform: scale(1.04);
+}

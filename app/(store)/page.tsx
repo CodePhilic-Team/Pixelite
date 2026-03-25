@@ -1,6 +1,7 @@
 import HeroSection from '@/components/home/HeroSection';
 import Marquee from '@/components/home/Marquee';
 import FeaturedCollection from '@/components/home/FeaturedCollection';
+import OverviewSection from '@/components/home/OverviewSection';
 import CategoryGrid from '@/components/home/CategoryGrid';
 import Testimonials from '@/components/home/Testimonials';
 import NewsletterBanner from '@/components/home/NewsletterBanner';
@@ -17,6 +18,7 @@ export default function HomePage() {
       <HeroSection />
       <Marquee />
       <FeaturedCollection />
+      <OverviewSection />
       <CategoryGrid />
       <Testimonials />
       <NewsletterBanner />
