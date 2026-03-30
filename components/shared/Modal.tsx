@@ -58,7 +58,7 @@ export default function Modal({ isOpen, onClose, label, children, className }: M
             aria-label={label}
             className={cn(
               'fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2',
-              'bg-[var(--color-ivory)] rounded-sm shadow-2xl max-h-[90vh] overflow-auto',
+              'bg-ivory rounded-sm shadow-2xl max-h-[90vh] overflow-auto',
               className
             )}
             initial={{ opacity: 0, scale: 0.96 }}

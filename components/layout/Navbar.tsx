@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { ShoppingBag, Search, Menu } from 'lucide-react';
+import { ShoppingBag, Search, Menu, LogIn, UserCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils/cn';
 import { useScrollDirection } from '@/lib/hooks/useScrollDirection';
 import { useCart } from '@/lib/hooks/useCart';
+import { useAuth } from '@/lib/hooks/useAuth';
 import Button from '@/components/ui/Button';
 import MobileMenu from './MobileMenu';
 
@@ -31,6 +32,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const direction = useScrollDirection();
   const { totalItems, openCart } = useCart();
+  const { isAuthenticated, user } = useAuth();
   const pathname = usePathname();
 
   const hasHero = HERO_PAGES.includes(pathname);
@@ -98,6 +100,35 @@ export default function Navbar() {
             >
               <Search size={18} />
             </Button>
+
+            {/* Auth icon — LogIn when guest, UserCircle+initials when signed in */}
+            {isAuthenticated && user ? (
+              <Link href="/dashboard" aria-label="My account dashboard">
+                <span
+                  className={cn(
+                    'relative flex h-8 w-8 items-center justify-center rounded-full ring-1 ring-gold/50',
+                    'font-display text-xs transition-all duration-200 hover:ring-gold',
+                    isTransparent
+                      ? 'bg-white/20 text-white hover:bg-white/30'
+                      : 'bg-gold/10 text-ink hover:bg-gold/20'
+                  )}
+                >
+                  {user.initials}
+                </span>
+              </Link>
+            ) : (
+              <Link
+                href="/login"
+                aria-label="Sign in to your account"
+                className={cn(
+                  'flex h-9 w-9 items-center justify-center rounded-sm',
+                  'transition-colors duration-200 hover:bg-stone/20',
+                  isTransparent ? 'text-white' : 'text-charcoal'
+                )}
+              >
+                <LogIn size={18} />
+              </Link>
+            )}
 
             {/* Cart */}
             <Button
