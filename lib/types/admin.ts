@@ -85,13 +85,13 @@ export interface Customer {
   firstName: string;
   lastName: string;
   email: string;
-  phone?: string;
-  avatar?: string;
+  phone?: string | null;
+  avatar?: string | null;
   totalOrders: number;
   totalSpentInCents: number;
-  address?: Address;
+  address?: Address | null;
   createdAt: string;
-  lastOrderAt?: string;
+  lastOrderAt?: string | null;
   status: 'active' | 'inactive';
 }
 
