@@ -16,6 +16,7 @@ const navLinks = [
   { href: '/shop/bags', label: 'Bags' },
   { href: '/shop/clothing', label: 'Clothing' },
   { href: '/about', label: 'Our Story' },
+  { href: '/admin/login', label: 'Admin' },
 ];
 
 /**

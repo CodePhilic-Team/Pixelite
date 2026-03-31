@@ -1,0 +1,286 @@
+{
+  "orders": [
+    {
+      "id": "ord-001",
+      "orderNumber": "ORD-1847",
+      "customerId": "cust-001",
+      "customerName": "Emily Chen",
+      "customerEmail": "emily.chen@email.com",
+      "items": [
+        {
+          "id": "item-001",
+          "productId": "prod-001",
+          "productName": "Artisan Leather Tote",
+          "productImage": "/images/products/leather-tote-01.jpg",
+          "variant": "Cognac / Large",
+          "quantity": 1,
+          "priceInCents": 29900
+        }
+      ],
+      "subtotalInCents": 29900,
+      "shippingInCents": 0,
+      "taxInCents": 2691,
+      "totalInCents": 32591,
+      "status": "pending",
+      "paymentStatus": "paid",
+      "shippingAddress": {
+        "street": "123 Main Street, Apt 4B",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10001",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "ord-002",
+      "orderNumber": "ORD-1846",
+      "customerId": "cust-002",
+      "customerName": "James Wilson",
+      "customerEmail": "j.wilson@email.com",
+      "items": [
+        {
+          "id": "item-002",
+          "productId": "prod-002",
+          "productName": "Silk Cashmere Wrap",
+          "productImage": "/images/products/cashmere-wrap-01.jpg",
+          "variant": "Ivory / One Size",
+          "quantity": 2,
+          "priceInCents": 24900
+        },
+        {
+          "id": "item-003",
+          "productId": "prod-005",
+          "productName": "Linen Throw Blanket",
+          "productImage": "/images/products/linen-blanket-01.jpg",
+          "variant": "Natural / Queen",
+          "quantity": 1,
+          "priceInCents": 14900
+        }
+      ],
+      "subtotalInCents": 64700,
+      "shippingInCents": 0,
+      "taxInCents": 5823,
+      "totalInCents": 70523,
+      "status": "processing",
+      "paymentStatus": "paid",
+      "shippingAddress": {
+        "street": "456 Oak Avenue",
+        "city": "Los Angeles",
+        "state": "CA",
+        "postalCode": "90001",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-15T08:15:00Z",
+      "updatedAt": "2024-01-15T09:00:00Z"
+    },
+    {
+      "id": "ord-003",
+      "orderNumber": "ORD-1845",
+      "customerId": "cust-003",
+      "customerName": "Sarah Parker",
+      "customerEmail": "sarah.p@email.com",
+      "items": [
+        {
+          "id": "item-004",
+          "productId": "prod-004",
+          "productName": "Vintage Watch",
+          "productImage": "/images/products/vintage-watch-01.jpg",
+          "variant": "Gold / 38mm",
+          "quantity": 1,
+          "priceInCents": 42900
+        }
+      ],
+      "subtotalInCents": 42900,
+      "shippingInCents": 0,
+      "taxInCents": 3861,
+      "totalInCents": 46761,
+      "status": "shipped",
+      "paymentStatus": "paid",
+      "shippingAddress": {
+        "street": "789 Pine Road",
+        "city": "Chicago",
+        "state": "IL",
+        "postalCode": "60601",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-14T14:20:00Z",
+      "updatedAt": "2024-01-15T08:30:00Z"
+    },
+    {
+      "id": "ord-004",
+      "orderNumber": "ORD-1844",
+      "customerId": "cust-004",
+      "customerName": "Michael Brown",
+      "customerEmail": "m.brown@email.com",
+      "items": [
+        {
+          "id": "item-005",
+          "productId": "prod-003",
+          "productName": "Handcrafted Ceramic Vase",
+          "productImage": "/images/products/ceramic-vase-01.jpg",
+          "variant": "White / Medium",
+          "quantity": 2,
+          "priceInCents": 19900
+        }
+      ],
+      "subtotalInCents": 39800,
+      "shippingInCents": 1500,
+      "taxInCents": 3582,
+      "totalInCents": 44882,
+      "status": "delivered",
+      "paymentStatus": "paid",
+      "shippingAddress": {
+        "street": "321 Elm Street",
+        "city": "Boston",
+        "state": "MA",
+        "postalCode": "02101",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-12T11:45:00Z",
+      "updatedAt": "2024-01-14T16:00:00Z"
+    },
+    {
+      "id": "ord-005",
+      "orderNumber": "ORD-1843",
+      "customerId": "cust-005",
+      "customerName": "Lisa Anderson",
+      "customerEmail": "l.anderson@email.com",
+      "items": [
+        {
+          "id": "item-006",
+          "productId": "prod-001",
+          "productName": "Artisan Leather Tote",
+          "productImage": "/images/products/leather-tote-01.jpg",
+          "variant": "Black / Medium",
+          "quantity": 1,
+          "priceInCents": 27900
+        }
+      ],
+      "subtotalInCents": 27900,
+      "shippingInCents": 0,
+      "taxInCents": 2511,
+      "totalInCents": 30411,
+      "status": "cancelled",
+      "paymentStatus": "refunded",
+      "shippingAddress": {
+        "street": "654 Maple Drive",
+        "city": "Seattle",
+        "state": "WA",
+        "postalCode": "98101",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-11T09:30:00Z",
+      "updatedAt": "2024-01-12T10:00:00Z"
+    },
+    {
+      "id": "ord-006",
+      "orderNumber": "ORD-1842",
+      "customerId": "cust-006",
+      "customerName": "David Kim",
+      "customerEmail": "d.kim@email.com",
+      "items": [
+        {
+          "id": "item-007",
+          "productId": "prod-002",
+          "productName": "Silk Cashmere Wrap",
+          "productImage": "/images/products/cashmere-wrap-01.jpg",
+          "variant": "Charcoal / One Size",
+          "quantity": 1,
+          "priceInCents": 24900
+        },
+        {
+          "id": "item-008",
+          "productId": "prod-003",
+          "productName": "Handcrafted Ceramic Vase",
+          "productImage": "/images/products/ceramic-vase-01.jpg",
+          "variant": "Terracotta / Small",
+          "quantity": 1,
+          "priceInCents": 15900
+        }
+      ],
+      "subtotalInCents": 40800,
+      "shippingInCents": 0,
+      "taxInCents": 3672,
+      "totalInCents": 44472,
+      "status": "delivered",
+      "paymentStatus": "paid",
+      "shippingAddress": {
+        "street": "987 Cedar Lane",
+        "city": "San Francisco",
+        "state": "CA",
+        "postalCode": "94102",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-10T15:00:00Z",
+      "updatedAt": "2024-01-13T12:00:00Z"
+    },
+    {
+      "id": "ord-007",
+      "orderNumber": "ORD-1841",
+      "customerId": "cust-007",
+      "customerName": "Jennifer Lee",
+      "customerEmail": "j.lee@email.com",
+      "items": [
+        {
+          "id": "item-009",
+          "productId": "prod-005",
+          "productName": "Linen Throw Blanket",
+          "productImage": "/images/products/linen-blanket-01.jpg",
+          "variant": "Sage / King",
+          "quantity": 1,
+          "priceInCents": 16900
+        }
+      ],
+      "subtotalInCents": 16900,
+      "shippingInCents": 1200,
+      "taxInCents": 1521,
+      "totalInCents": 19621,
+      "status": "shipped",
+      "paymentStatus": "paid",
+      "shippingAddress": {
+        "street": "147 Birch Court",
+        "city": "Austin",
+        "state": "TX",
+        "postalCode": "78701",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-09T13:45:00Z",
+      "updatedAt": "2024-01-11T09:30:00Z"
+    },
+    {
+      "id": "ord-008",
+      "orderNumber": "ORD-1840",
+      "customerId": "cust-008",
+      "customerName": "Robert Martinez",
+      "customerEmail": "r.martinez@email.com",
+      "items": [
+        {
+          "id": "item-010",
+          "productId": "prod-004",
+          "productName": "Vintage Watch",
+          "productImage": "/images/products/vintage-watch-01.jpg",
+          "variant": "Silver / 42mm",
+          "quantity": 1,
+          "priceInCents": 44900
+        }
+      ],
+      "subtotalInCents": 44900,
+      "shippingInCents": 0,
+      "taxInCents": 4041,
+      "totalInCents": 48941,
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "street": "258 Willow Way",
+        "city": "Denver",
+        "state": "CO",
+        "postalCode": "80201",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-15T11:00:00Z",
+      "updatedAt": "2024-01-15T11:00:00Z"
+    }
+  ]
+}

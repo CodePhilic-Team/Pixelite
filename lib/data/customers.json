@@ -1,0 +1,204 @@
+{
+  "customers": [
+    {
+      "id": "cust-001",
+      "firstName": "Emily",
+      "lastName": "Chen",
+      "email": "emily.chen@email.com",
+      "phone": "+1 (555) 123-4567",
+      "avatar": null,
+      "totalOrders": 5,
+      "totalSpentInCents": 158700,
+      "address": {
+        "street": "123 Main Street, Apt 4B",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10001",
+        "country": "United States"
+      },
+      "createdAt": "2023-06-15T10:30:00Z",
+      "lastOrderAt": "2024-01-15T10:30:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-002",
+      "firstName": "James",
+      "lastName": "Wilson",
+      "email": "j.wilson@email.com",
+      "phone": "+1 (555) 234-5678",
+      "avatar": null,
+      "totalOrders": 12,
+      "totalSpentInCents": 425600,
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Los Angeles",
+        "state": "CA",
+        "postalCode": "90001",
+        "country": "United States"
+      },
+      "createdAt": "2023-03-22T14:15:00Z",
+      "lastOrderAt": "2024-01-15T08:15:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-003",
+      "firstName": "Sarah",
+      "lastName": "Parker",
+      "email": "sarah.p@email.com",
+      "phone": "+1 (555) 345-6789",
+      "avatar": null,
+      "totalOrders": 8,
+      "totalSpentInCents": 287400,
+      "address": {
+        "street": "789 Pine Road",
+        "city": "Chicago",
+        "state": "IL",
+        "postalCode": "60601",
+        "country": "United States"
+      },
+      "createdAt": "2023-05-10T09:00:00Z",
+      "lastOrderAt": "2024-01-14T14:20:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-004",
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "email": "m.brown@email.com",
+      "phone": "+1 (555) 456-7890",
+      "avatar": null,
+      "totalOrders": 3,
+      "totalSpentInCents": 98500,
+      "address": {
+        "street": "321 Elm Street",
+        "city": "Boston",
+        "state": "MA",
+        "postalCode": "02101",
+        "country": "United States"
+      },
+      "createdAt": "2023-09-05T11:30:00Z",
+      "lastOrderAt": "2024-01-12T11:45:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-005",
+      "firstName": "Lisa",
+      "lastName": "Anderson",
+      "email": "l.anderson@email.com",
+      "phone": "+1 (555) 567-8901",
+      "avatar": null,
+      "totalOrders": 2,
+      "totalSpentInCents": 54800,
+      "address": {
+        "street": "654 Maple Drive",
+        "city": "Seattle",
+        "state": "WA",
+        "postalCode": "98101",
+        "country": "United States"
+      },
+      "createdAt": "2023-11-20T16:45:00Z",
+      "lastOrderAt": "2024-01-11T09:30:00Z",
+      "status": "inactive"
+    },
+    {
+      "id": "cust-006",
+      "firstName": "David",
+      "lastName": "Kim",
+      "email": "d.kim@email.com",
+      "phone": "+1 (555) 678-9012",
+      "avatar": null,
+      "totalOrders": 15,
+      "totalSpentInCents": 523700,
+      "address": {
+        "street": "987 Cedar Lane",
+        "city": "San Francisco",
+        "state": "CA",
+        "postalCode": "94102",
+        "country": "United States"
+      },
+      "createdAt": "2023-02-14T08:00:00Z",
+      "lastOrderAt": "2024-01-10T15:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-007",
+      "firstName": "Jennifer",
+      "lastName": "Lee",
+      "email": "j.lee@email.com",
+      "phone": "+1 (555) 789-0123",
+      "avatar": null,
+      "totalOrders": 7,
+      "totalSpentInCents": 189200,
+      "address": {
+        "street": "147 Birch Court",
+        "city": "Austin",
+        "state": "TX",
+        "postalCode": "78701",
+        "country": "United States"
+      },
+      "createdAt": "2023-07-28T12:30:00Z",
+      "lastOrderAt": "2024-01-09T13:45:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-008",
+      "firstName": "Robert",
+      "lastName": "Martinez",
+      "email": "r.martinez@email.com",
+      "phone": "+1 (555) 890-1234",
+      "avatar": null,
+      "totalOrders": 1,
+      "totalSpentInCents": 48941,
+      "address": {
+        "street": "258 Willow Way",
+        "city": "Denver",
+        "state": "CO",
+        "postalCode": "80201",
+        "country": "United States"
+      },
+      "createdAt": "2024-01-15T11:00:00Z",
+      "lastOrderAt": "2024-01-15T11:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-009",
+      "firstName": "Amanda",
+      "lastName": "Taylor",
+      "email": "a.taylor@email.com",
+      "phone": "+1 (555) 901-2345",
+      "avatar": null,
+      "totalOrders": 9,
+      "totalSpentInCents": 312400,
+      "address": {
+        "street": "369 Spruce Boulevard",
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97201",
+        "country": "United States"
+      },
+      "createdAt": "2023-04-18T10:15:00Z",
+      "lastOrderAt": "2024-01-08T17:30:00Z",
+      "status": "active"
+    },
+    {
+      "id": "cust-010",
+      "firstName": "Christopher",
+      "lastName": "Davis",
+      "email": "c.davis@email.com",
+      "phone": "+1 (555) 012-3456",
+      "avatar": null,
+      "totalOrders": 4,
+      "totalSpentInCents": 145600,
+      "address": {
+        "street": "741 Redwood Circle",
+        "city": "Miami",
+        "state": "FL",
+        "postalCode": "33101",
+        "country": "United States"
+      },
+      "createdAt": "2023-08-30T14:00:00Z",
+      "lastOrderAt": "2024-01-06T11:00:00Z",
+      "status": "active"
+    }
+  ]
+}

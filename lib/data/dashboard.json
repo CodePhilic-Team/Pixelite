@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "totalRevenue": 12847500,
+    "totalOrders": 847,
+    "totalCustomers": 2341,
+    "totalProducts": 156,
+    "revenueChange": 12.5,
+    "ordersChange": 8.3,
+    "customersChange": 15.2,
+    "productsChange": 3.1
+  },
+  "salesData": [
+    { "date": "2024-01-01", "revenue": 425000, "orders": 28 },
+    { "date": "2024-01-02", "revenue": 380000, "orders": 24 },
+    { "date": "2024-01-03", "revenue": 520000, "orders": 35 },
+    { "date": "2024-01-04", "revenue": 470000, "orders": 31 },
+    { "date": "2024-01-05", "revenue": 610000, "orders": 42 },
+    { "date": "2024-01-06", "revenue": 725000, "orders": 48 },
+    { "date": "2024-01-07", "revenue": 680000, "orders": 45 }
+  ],
+  "topProducts": [
+    {
+      "id": "prod-001",
+      "name": "Artisan Leather Tote",
+      "image": "/images/products/leather-tote-01.jpg",
+      "sold": 124,
+      "revenue": 3720000
+    },
+    {
+      "id": "prod-002",
+      "name": "Silk Cashmere Wrap",
+      "image": "/images/products/cashmere-wrap-01.jpg",
+      "sold": 98,
+      "revenue": 2940000
+    },
+    {
+      "id": "prod-003",
+      "name": "Handcrafted Ceramic Vase",
+      "image": "/images/products/ceramic-vase-01.jpg",
+      "sold": 87,
+      "revenue": 1740000
+    },
+    {
+      "id": "prod-004",
+      "name": "Vintage Watch",
+      "image": "/images/products/vintage-watch-01.jpg",
+      "sold": 65,
+      "revenue": 1950000
+    },
+    {
+      "id": "prod-005",
+      "name": "Linen Throw Blanket",
+      "image": "/images/products/linen-blanket-01.jpg",
+      "sold": 112,
+      "revenue": 1680000
+    }
+  ],
+  "recentActivity": [
+    {
+      "id": "act-001",
+      "type": "order",
+      "message": "New order #ORD-1847 received",
+      "timestamp": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "act-002",
+      "type": "customer",
+      "message": "New customer registered: Emily Chen",
+      "timestamp": "2024-01-15T09:45:00Z"
+    },
+    {
+      "id": "act-003",
+      "type": "stock",
+      "message": "Low stock alert: Silk Cashmere Wrap",
+      "timestamp": "2024-01-15T09:15:00Z"
+    },
+    {
+      "id": "act-004",
+      "type": "order",
+      "message": "Order #ORD-1845 shipped",
+      "timestamp": "2024-01-15T08:30:00Z"
+    },
+    {
+      "id": "act-005",
+      "type": "review",
+      "message": "New 5-star review on Artisan Leather Tote",
+      "timestamp": "2024-01-14T22:00:00Z"
+    }
+  ]
+}
